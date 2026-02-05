@@ -2,16 +2,20 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18499914.svg)](https://doi.org/10.5281/zenodo.18499914)
 
-Bioinformatics reanalysis of bacterial single-cell RNA-seq data (GSE231935, M3-Seq) demonstrating transcriptional heterogeneity in *E. coli* populations. Findings support future work on biofilm/MGE-related projects and population heterogeneity.
+## Overview
+
+Bacterial populations exhibit substantial transcriptional heterogeneity at the single-cell level, with individual cells adopting distinct phenotypes—including bet-hedging strategies, prophage induction, and phage-infected states—that are invisible to bulk sequencing [1]. M3-Seq (Massively-parallel Multiplexed Microbial sequencing) addresses this by combining combinatorial cell indexing with post hoc rRNA depletion, enabling profiling of hundreds of thousands of bacterial cells and revealing rare subpopulations in *E. coli* and *B. subtilis* [1,2]. This pilot reanalyses publicly available M3-Seq data from *E. coli* MG1655 (GSE231935) [3] to demonstrate population heterogeneity and cluster-specific gene expression patterns relevant to biofilm regulation and mobile genetic element (MGE)–host interactions.
+
+The analysis pipeline uses [Scanpy](https://scanpy.readthedocs.io/) [4] for quality control, normalization, dimensionality reduction (PCA/UMAP), clustering, and differential expression. Findings support the concept that *E. coli* populations harbour distinct transcriptional states—consistent with curli ON/OFF bistability, stress responses, and MGE-mediated rewiring of regulatory networks [1,5]—and validate the approach for future work on biofilm evolution and rare subpopulation characterization.
 
 > **Cite this work:** See [CITATION.cff](CITATION.cff) or the *How to cite* section below.
 
 ## Dataset
 
-- **Source:** NCBI GEO [GSE231935](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231935)
-- **Citation:** Wang B et al., Nature Microbiology 2023 (PMID: 37653008)
-- **Content:** M3-Seq (Massively-parallel Microbial mRNA Sequencing) — *E. coli* MG1655, 7,681 cells × 4,396 genes
-- **Relevance:** Identifies rare subpopulations (bet-hedging, prophage induction, phage-infected cells), aligning with MGE/biofilm heterogeneity
+- **Source:** NCBI GEO [GSE231935](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231935) [3]
+- **Original study:** Wang et al., *Nature Microbiology* 2023 [1]
+- **Content:** M3-Seq — *E. coli* MG1655, 7,681 cells × 4,396 genes (post-QC: 3,525 cells × 2,619 genes)
+- **Relevance:** Rare subpopulations (bet-hedging, prophage induction, phage-infected cells) [1,2]
 
 ## Setup
 
@@ -54,8 +58,8 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 
 ## Findings & Future Work
 
-- **UMAP clusters:** *E. coli* populations exhibit distinct transcriptional states at single-cell resolution, supporting population heterogeneity (e.g., curli ON/OFF bistability, MGE-induced states).
-- **Differential expression:** Cluster-specific genes include stress response, prophage-related, and biofilm-associated loci — consistent with MGE-mediated rewiring of regulatory networks.
+- **UMAP clusters:** *E. coli* populations exhibit distinct transcriptional states at single-cell resolution, supporting population heterogeneity (e.g., curli ON/OFF bistability, MGE-induced states) [1,5].
+- **Differential expression:** Cluster-specific genes include stress response, prophage-related, and biofilm-associated loci—consistent with MGE-mediated rewiring of regulatory networks [1,5].
 - **Future directions:** Findings validate the approach for follow-up studies on biofilm regulation, MGE-host interactions, and rare subpopulation characterization. The pipeline is reusable for similar bacterial single-cell datasets.
 
 ## Zenodo
@@ -103,6 +107,18 @@ Division of Microbial Ecology (DOME), Centre for Microbiology and Environmental 
 ```
 
 Or use the [CITATION.cff](CITATION.cff) file. Zenodo DOI: [10.5281/zenodo.18499914](https://doi.org/10.5281/zenodo.18499914)
+
+## References
+
+1. Wang B, Lin AE, Yuan J, Novak KE, Koch MD, Wingreen NS, Adamson B, Gitai Z. Single-cell massively-parallel multiplexed microbial sequencing (M3-seq) identifies rare bacterial populations and profiles phage infection. *Nature Microbiology* 2023;8(10):1846–1862. [DOI:10.1038/s41564-023-01462-3](https://doi.org/10.1038/s41564-023-01462-3) · [PMID:37653008](https://pubmed.ncbi.nlm.nih.gov/37653008/)
+
+2. Wang B, Lin AE, Yuan J, Koch MD, Adamson BS, Wingreen N, Gitai Z. Massively-parallel Microbial mRNA Sequencing (M3-Seq) reveals heterogeneous behaviors in bacteria at single-cell resolution. *bioRxiv* 2022. [DOI:10.1101/2022.09.21.508688](https://doi.org/10.1101/2022.09.21.508688)
+
+3. Wang B, Lin AE, Yuan J, Koch MD, Adamson BS, Wingreen N, Gitai Z. Massively-parallel Microbial mRNA Sequencing (M3-Seq) reveals heterogenous behaviors in bacteria at single-cell resolution. *Gene Expression Omnibus* 2023;GSE231935. [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231935](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE231935)
+
+4. Wolf FA, Angerer P, Theis FJ. SCANPY: large-scale single-cell gene expression data analysis. *Genome Biology* 2018;19:15. [DOI:10.1186/s13059-017-1382-0](https://doi.org/10.1186/s13059-017-1382-0)
+
+5. Veening J-W, Smits WK, Kuipers OP. Bistability, epigenetics, and bet-hedging in bacteria. *Annual Review of Microbiology* 2008;62:193–210. [DOI:10.1146/annurev.micro.62.081307.163002](https://doi.org/10.1146/annurev.micro.62.081307.163002)
 
 ## License
 
