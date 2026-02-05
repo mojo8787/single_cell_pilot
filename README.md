@@ -107,7 +107,7 @@ single_cell_pilot/
 ## Author
 
 **Almotasem Bellah Younis, PhD**  
-Division of Microbial Ecology (DOME), Centre for Microbiology and Environmental Systems Science (CeMESS), University of Vienna  
+Mendel University in Brno, Czech Republic  
 [motasem.youniss@gmail.com](mailto:motasem.youniss@gmail.com) · [motasemyounis.com](https://motasemyounis.com) · [ORCID 0000-0003-2070-2811](https://orcid.org/0000-0003-2070-2811)
 
 ## How to cite
