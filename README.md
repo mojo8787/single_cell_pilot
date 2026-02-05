@@ -60,19 +60,19 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 
 ### UMAP clusters (8 transcriptional states)
 
-![UMAP clusters](output/umap_clusters.png)
+![UMAP clusters](https://raw.githubusercontent.com/mojo8787/single_cell_pilot/main/output/umap_clusters.png)
 
 ### Total counts per cluster
 
-![Violin plot](output/violin_total_counts.png)
+![Violin plot](https://raw.githubusercontent.com/mojo8787/single_cell_pilot/main/output/violin_total_counts.png)
 
 ### Top 5 differentially expressed genes per cluster
 
-![Heatmap](output/heatmap_top5.png)
+![Heatmap](https://raw.githubusercontent.com/mojo8787/single_cell_pilot/main/output/heatmap_top5.png)
 
 ### Top 3 DE genes per cluster (dotplot)
 
-![Dotplot](output/dotplot__top3.png)
+![Dotplot](https://raw.githubusercontent.com/mojo8787/single_cell_pilot/main/output/dotplot__top3.png)
 
 ## Findings & Future Work
 
