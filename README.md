@@ -56,6 +56,24 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 | `output/dotplot__top3.png` | Dotplot of top 3 DE genes per cluster |
 | `output/summary_stats.csv` | Cell counts, gene counts, cluster sizes |
 
+## Results
+
+### UMAP clusters (8 transcriptional states)
+
+![UMAP clusters](output/umap_clusters.png)
+
+### Total counts per cluster
+
+![Violin plot](output/violin_total_counts.png)
+
+### Top 5 differentially expressed genes per cluster
+
+![Heatmap](output/heatmap_top5.png)
+
+### Top 3 DE genes per cluster (dotplot)
+
+![Dotplot](output/dotplot__top3.png)
+
 ## Findings & Future Work
 
 - **UMAP clusters:** *E. coli* populations exhibit distinct transcriptional states at single-cell resolution, supporting population heterogeneity (e.g., curli ON/OFF bistability, MGE-induced states) [1,5].
