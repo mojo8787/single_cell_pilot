@@ -1,0 +1,5 @@
+.venv/
+data/*.tar
+data/*.csv.gz
+__pycache__/
+*.pyc

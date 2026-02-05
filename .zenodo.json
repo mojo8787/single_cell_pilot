@@ -1,0 +1,23 @@
+{
+  "creators": [
+    {
+      "name": "Younis, Almotasem Bellah",
+      "affiliation": "Division of Microbial Ecology (DOME), Centre for Microbiology and Environmental Systems Science (CeMESS), University of Vienna",
+      "orcid": "0000-0003-2070-2811"
+    }
+  ],
+  "title": "Single-Cell Biofilm Heterogeneity Pilot",
+  "description": "Reanalysis of bacterial single-cell RNA-seq data (GSE231935, M3-Seq) demonstrating transcriptional heterogeneity in E. coli populations. Pipeline: load, QC, normalize, PCA/UMAP, clustering, differential expression. Findings support future work on biofilm regulation and MGE-host interactions.",
+  "keywords": [
+    "single-cell RNA-seq",
+    "bacterial transcriptomics",
+    "biofilm",
+    "M3-Seq",
+    "E. coli",
+    "population heterogeneity",
+    "Scanpy"
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "version": "1.0.0"
+}
