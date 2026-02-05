@@ -63,6 +63,7 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 1. Push this repo to GitHub (e.g. `mojo8787/single_cell_pilot`).
 2. Go to [Zenodo](https://zenodo.org) → Log in → GitHub → Enable the repo.
 3. Create a release (e.g. `v1.0.0`) — Zenodo will mint a DOI.
+
 Metadata is in [CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json).
 
 ## Project structure
