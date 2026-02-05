@@ -60,7 +60,7 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 
 ## Zenodo
 
-1. Push this repo to GitHub (e.g. `motasemyounis/single_cell_pilot`).
+1. Push this repo to GitHub (e.g. `mojo8787/single_cell_pilot`).
 2. Go to [Zenodo](https://zenodo.org) → Log in → GitHub → Enable the repo.
 3. Create a release (e.g. `v1.0.0`) — Zenodo will mint a DOI.
 4. Replace `XXXXXXX` in the DOI badge above with your Zenodo record ID.
@@ -96,7 +96,7 @@ Division of Microbial Ecology (DOME), Centre for Microbiology and Environmental 
   author = {Younis, Almotasem Bellah},
   title = {Single-Cell Biofilm Heterogeneity Pilot},
   year = {2026},
-  url = {https://github.com/motasemyounis/single_cell_pilot},
+  url = {https://github.com/mojo8787/single_cell_pilot},
   version = {1.0.0}
 }
 ```
