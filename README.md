@@ -1,6 +1,6 @@
 # Single-Cell Biofilm Heterogeneity Pilot
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18499914.svg)](https://doi.org/10.5281/zenodo.18499914)
 
 Bioinformatics reanalysis of bacterial single-cell RNA-seq data (GSE231935, M3-Seq) demonstrating transcriptional heterogeneity in *E. coli* populations. Findings support future work on biofilm/MGE-related projects and population heterogeneity.
 
@@ -63,8 +63,6 @@ Pipeline: load → QC → normalize → PCA/UMAP → Leiden clustering → diffe
 1. Push this repo to GitHub (e.g. `mojo8787/single_cell_pilot`).
 2. Go to [Zenodo](https://zenodo.org) → Log in → GitHub → Enable the repo.
 3. Create a release (e.g. `v1.0.0`) — Zenodo will mint a DOI.
-4. Replace `XXXXXXX` in the DOI badge above with your Zenodo record ID.
-
 Metadata is in [CITATION.cff](CITATION.cff) and [.zenodo.json](.zenodo.json).
 
 ## Project structure
@@ -96,12 +94,14 @@ Division of Microbial Ecology (DOME), Centre for Microbiology and Environmental 
   author = {Younis, Almotasem Bellah},
   title = {Single-Cell Biofilm Heterogeneity Pilot},
   year = {2026},
+  publisher = {Zenodo},
+  doi = {10.5281/zenodo.18499914},
   url = {https://github.com/mojo8787/single_cell_pilot},
-  version = {1.0.0}
+  version = {1.0.1}
 }
 ```
 
-Or use the [CITATION.cff](CITATION.cff) file. After depositing on Zenodo, replace the DOI badge above and add the Zenodo DOI to your citations.
+Or use the [CITATION.cff](CITATION.cff) file. Zenodo DOI: [10.5281/zenodo.18499914](https://doi.org/10.5281/zenodo.18499914)
 
 ## License
 

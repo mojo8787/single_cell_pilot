@@ -2,7 +2,8 @@ cff-version: 1.2.0
 title: "Single-Cell Biofilm Heterogeneity Pilot"
 message: "If you use this software or its findings, please cite it as below."
 type: software
-version: 1.0.0
+version: 1.0.1
+doi: "10.5281/zenodo.18499914"
 date-released: "2026-02-06"
 url: "https://github.com/mojo8787/single_cell_pilot"
 repository-code: "https://github.com/mojo8787/single_cell_pilot"
